@@ -1300,7 +1300,7 @@ span {
   z-index: 1000;
   background-color: #fff;
   transition: opacity 1s ease-in-out;
-  /* display: none; */
+  display: none;
 }
 
 .loading-animation {
