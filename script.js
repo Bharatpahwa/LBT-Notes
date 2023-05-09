@@ -46,7 +46,7 @@ visitButtons.forEach((button) => {
     event.preventDefault();
 
     // Show the loading container
-    loadingContainer.style.display = "block";
+    loadingContainer.style.display = "flex";
 
     // Set a timeout to hide the loading container after 5 seconds and redirect to the link
     setTimeout(function () {
