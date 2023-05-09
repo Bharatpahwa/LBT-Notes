@@ -41,6 +41,7 @@ const loadingContainer = document.querySelector('.loading-container');
 // Add event listener to each button
 visitButtons.forEach(button => {
   button.addEventListener('click', function() {
+     alert("Use Code LBT35 To get 35% off on all courses");
     // Show the loading container
     loadingContainer.style.display = "flex";
     
