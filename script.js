@@ -47,6 +47,6 @@ visitButtons.forEach(button => {
     // Set a timeout to hide the loading container after 5 seconds
     setTimeout(function() {
       loadingContainer.style.display = "none";
-    }, 3000);
+    }, 5000);
   });
 });
