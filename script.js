@@ -33,12 +33,10 @@ SemesterFilter.addEventListener("change", () => {
 function websiteVisits(response) {
   document.querySelector("#visits").textContent = response.value;
 }
-
 const visitButtons = document.querySelectorAll(".Visit_Button");
 
 // Get the loading container with the class name "loading-container"
 const loadingContainer = document.querySelector(".loading-container");
-loadingContainer.style.display = "none";
 // Add event listener to each button
 visitButtons.forEach((button) => {
   button.addEventListener("click", function (event) {
@@ -51,8 +49,7 @@ visitButtons.forEach((button) => {
     // Set a timeout to hide the loading container after 5 seconds and redirect to the link
     setTimeout(function () {
       loadingContainer.style.display = "none";
-      // Open the link in a new window or tab
-      window.open(button.parentElement.href, "_blank");
-    }, 5000);
+      window.location.href = button.parentElement.href;
+    }, 4000);
   });
 });
